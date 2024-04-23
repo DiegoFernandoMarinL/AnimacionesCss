@@ -1,8 +1,83 @@
-img {
+.section__background{
     position: absolute;
-    width: 100%;
+    width: 1293px;
+    height: 240px;
+    top: 400px;
+    background: green;
 }
-a.link1, a.link2 {
+#arbol {
+    position: absolute;
+    width: 20vw;
+    top: 200px;
+    left: 50px;
+}
+#casa {
+    position: absolute;
+    width: 20vw;
+    top: 200px;
+    left: 900px;
+}
+.section__content {
+    display: flex;
+    height: 49vw;
+}
+#sol {
+    animation-name: sun;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    position: absolute;
+    /* align-self: flex-start; */
+    width: 200px;
+    left: 900px;
+}
+#nube {
+    animation-name: sun;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    position: absolute;
+    /* align-self: flex-start; */
+    width: 200px;
+    left: 900px;
+}
+#flor {
+    animation-name: sun;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    position: absolute;
+    /* align-self: flex-start; */
+    width: 200px;
+    left: 900px;
+}
+@keyframes sun{
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 20%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.section__content #nube {
+    align-self: flex-start;
+    width: 200px;
+}
+.section__content #flor {
+    align-self: flex-start;
+    justify-self: flex;
+    width: 200px;
+}
+/* a.link1, a.link2 {
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -25,4 +100,4 @@ a.link2 {
     transition-duration: 10s;
     transition-timing-function: ease;
     transition-delay: 0.2s;
-}
+} */
