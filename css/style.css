@@ -1,0 +1,28 @@
+img {
+    position: absolute;
+    width: 100%;
+}
+a.link1, a.link2 {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+a.link1 {
+    color: #ffffff;
+    background: red;
+    border: 1px solid #5380d2;
+
+    transition-property: all;
+    transition-duration: 10s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+}
+a.link2 {
+    color: #ffffff;
+    background: blue;
+    border: 1px solid #5380d2;
+
+    transition-property: all;
+    transition-duration: 10s;
+    transition-timing-function: ease;
+    transition-delay: 0.2s;
+}
