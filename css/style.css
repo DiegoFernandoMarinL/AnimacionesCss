@@ -1,17 +1,17 @@
 .section__background{
     position: absolute;
     width: 100%;
-    height: 240px;
+    height: 18vw;
     top: 30vw;
     background: green;
 }
-#arbol {
+.arbol {
     position: absolute;
     width: 20vw;
     top: 15vw;
     left: 10vw;
 }
-#casa {
+.casa {
     position: absolute;
     width: 20vw;
     top: 15vw;
@@ -21,7 +21,7 @@
     display: flex;
     height: 49vw;
 }
-#sol {
+.sol {
     animation-name: sun;
     animation-duration: 4s;
     animation-delay: 0s;
@@ -29,34 +29,42 @@
     animation-timing-function: ease-out;
     animation-direction: normal;
     position: absolute;
-    /* align-self: flex-start; */
-    width: 200px;
-    left: 900px;
+    width: 20vw;
+    left: 70vw;
 }
-#nube {
-    animation-name: sun;
-    animation-duration: 4s;
+.nube {
+    animation-name: nube;
+    animation-duration: 30s;
     animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
     animation-direction: normal;
     position: absolute;
-    /* align-self: flex-start; */
-    width: 200px;
-    left: 900px;
+    width: 25vw;
+    left: 75vw;
 }
-#flor {
-    /* opacity: 100%; */
-
-    transition-property: all;
-    transition-duration: 5s;
-    transition-timing-function: ease;
-    transition-delay: 2s;
+.flor {
+    animation-name: flor;
+    animation-duration: 20s;
+    animation-delay: 7s;
+    animation-timing-function: ease-in-out;
     position: absolute;
-    /* align-self: flex-start; */
-    height: 12vw;
+    width: 10vw;
+    opacity: 0;
     top: 25vw;
     left: 45vw;
+}
+.lluvia {
+    animation-name: lluvia;
+    animation-duration: 15s;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    top: 10vw;
+    opacity: 0;
+    left: 40vw;
+    width: 20vw;
+    height: 40vw;
 }
 @keyframes sun{
     0%{
@@ -70,38 +78,29 @@
     }
 }
 @keyframes flor{
-    
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
-.section__content #nube {
-    align-self: flex-start;
-    width: 200px;
+@keyframes nube{
+    0%{
+        left: 80vw;
+    }
+    50%{
+        left: 40vw;
+    }
+    100%{
+        left: 0;
+    }
 }
-.section__content #flor {
-    align-self: flex-start;
-    justify-self: flex;
-    width: 200px;
+@keyframes lluvia{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
-/* a.link1, a.link2 {
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-a.link1 {
-    color: #ffffff;
-    background: red;
-    border: 1px solid #5380d2;
-
-    transition-property: all;
-    transition-duration: 10s;
-    transition-timing-function: ease;
-    transition-delay: 0.2s;
-}
-a.link2 {
-    color: #ffffff;
-    background: blue;
-    border: 1px solid #5380d2;
-
-    transition-property: all;
-    transition-duration: 10s;
-    transition-timing-function: ease;
-    transition-delay: 0.2s;
-} */
